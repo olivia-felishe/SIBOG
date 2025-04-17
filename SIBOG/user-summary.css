@@ -1,0 +1,60 @@
+main.user-summary {
+    margin-block-end: 3rem;
+    height: 100%;
+}
+
+main.user-summary section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: var(--shade-main-clr);
+}
+
+main img {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    color: var(--white-clr);
+    margin: 2rem 0;
+}
+
+main article {
+    background: var(--tint-main-clr);
+    padding: 2rem 1rem;
+    width: 20rem;
+    border-radius: var(--border-radius);
+    margin-block-end: 1.5rem;
+}
+
+main p {
+    font-size: 1.2rem;
+}
+
+main article.filter input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    margin: 1rem 0;
+}
+
+main article.filter button {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--white-clr);
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    background: var(--shade-accent-clr);
+}

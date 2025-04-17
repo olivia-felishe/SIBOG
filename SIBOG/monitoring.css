@@ -1,0 +1,271 @@
+body {
+    background: var(--shade-main-clr);
+}
+
+main.user-monitoring {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card {
+    background: var(--white-clr);
+    padding: 1rem;
+    margin: 0 .5rem;
+    height: 15rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.card img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: var(--circle-radius);
+    margin-block-end: 1rem;
+}
+
+/* SMC SECTION */
+
+main.monitoring {
+    margin: auto 1rem;
+}
+
+main.monitoring .go-back {
+    display: block;
+    color: var(--white-clr);
+    margin-block-start: 1rem;
+}
+
+main.smc-monitoring .dashboard {
+    background: var(--main-clr);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    color: var(--white-clr);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+main.smc-monitoring h6 {
+    font-size: 1rem;
+}
+
+main.smc-monitoring #smc-percent {
+    font-size: 1.5rem;
+    background: var(--white-clr);
+    display: inline-block;
+    padding: .3rem 1rem;
+    border-radius: var(--border-radius);
+    color: var(--main-clr);
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+main.smc-monitoring #smc-percent.low-percent {
+    color: var(--warning-clr);
+}
+
+.warning-notif {
+    background: var(--tint-warning-clr);
+    color: var(--warning-clr);
+    padding: .5rem 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.warning-notif i {
+    font-size: 2rem;
+    margin-inline-end: 1rem;
+}
+
+.warning-notif .warning-msg {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.warning-notif .suggested-action {
+    grid-column: span 2;
+}
+
+.toggle-feature {
+    background: var(--tint-main-clr);
+    color: var(--shade-main-clr);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: .8rem;
+    margin: 1rem 0;
+}
+
+.toggle-feature p {
+    display: inline;
+    margin-inline-end: .5rem;
+}
+
+.toggle-feature input {
+    position: relative;
+    margin-inline-end: .8rem;
+}
+
+.toggle-feature input::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -.5rem;
+    width: 2rem;
+    height: 1rem;
+    border-radius: var(--border-radius);
+    background: var(--dark-grey-clr);
+    transition: .5s;
+}
+
+.toggle-feature input::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: var(--border-radius);
+    background: var(--white-clr);
+    transition: .5s;
+}
+
+.toggle-feature input.active::before {
+    background: var(--main-clr);
+}
+
+.toggle-feature input.active::after {
+    left: .5rem;
+}
+
+/* WATER LEVEL */
+.water-tank {
+    background: var(--light-grey-clr);
+    border-radius: var(--border-radius);
+    width: 80%;
+    height: 13rem;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.water-tank .wtl-percent {
+    position: absolute;
+    left: 50%;
+    bottom: 55%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white-clr);
+}
+
+.water-tank .water-level {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    background: var(--light-main-clr);
+}
+
+/* HUMIDITY */
+main.humidity-monitoring {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+main.humidity-monitoring .go-back, .precipitation, .air-quality {
+    grid-column: span 2;
+}
+
+main.humidity-monitoring section {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    color: var(--white-clr);
+}
+
+.humidity, .weather {
+    background: var(--light-main-clr);
+}
+
+.precipitation, .air-quality {
+    background: var(--main-clr);
+}
+
+.humidity .humidity-percent {
+    font-size: 2.5rem;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather h4 {
+    grid-column: span 2;
+}
+
+.precipitation .prep-stat, .air-quality .air-stat {
+    font-size: 1.7rem;
+    margin: .5rem 0;
+}
+
+.precipitation p:nth-child(3), .air-quality p:nth-child(3) {
+    font-size: .8rem;
+}
+
+.air-quality {
+    margin-bottom: 1rem;
+}
+
+/* TEMPARATURE */
+.temp-monitoring section {
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    color: var(--white-clr);
+}
+
+.temp-monitoring section:nth-child(even) {
+    background: var(--light-main-clr);
+}
+
+.temp-monitoring .today {
+    text-align: center;
+}
+
+.temp-monitoring .today .temp {
+    font-size: 2.5rem;
+}
+
+.temp-monitoring .today p:last-child {
+    font-size: .8rem;
+}
+
+.temp-monitoring .next-hrs {
+    background: var(--main-clr);
+    margin: 1rem 0;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: scroll;
+}
+
+.temp-monitoring p:has(i) {
+    grid-column: span 5;
+}
+
+.temp-monitoring article:nth-child(2), .temp-monitoring article:nth-child(3) {
+    grid-column: span calc(5/3);
+}
+
+.temp-monitoring article {
+    text-align: center;
+}
+
+.temp-monitoring section:last-child p:nth-child(2) {
+    font-size: 1.8rem;
+}
+
+.uv-index {
+    margin-bottom: 1rem;
+}

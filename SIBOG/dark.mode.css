@@ -1,0 +1,136 @@
+body.dark-mode {
+    background: var(--shade-main-clr);
+}
+
+.dark-mode header.header {
+    background: var(--main-clr);
+    color: var(--tint-main-clr);
+    border-color: var(--light-main-clr);
+}
+
+.dark-mode .profile-menu {
+    background: #015a25ee;
+    color: var(--white-clr);
+}
+
+.dark-mode .profile-menu section.notif {
+    border-color: var(--white-clr);
+}
+
+.dark-mode header.header h4 {
+    color: var(--tint-main-clr);
+}
+
+.dark-mode main .greetings {
+    color: var(--tint-main-clr);
+}
+
+.dark-mode main .greetings .user-name {
+    color: var(--light-main-clr);
+}
+
+.dark-mode main .nav-section {
+    background: var(--main-clr);
+    color: var(--tint-main-clr);
+}
+
+.dark-mode main .nav-section i {
+    color: var(--tint-main-clr);
+}
+
+.dark-mode .card {
+    background: var(--light-main-clr);
+}
+
+/* MESSAGES */
+.dark-mode .message-sect {
+    background: var(--main-clr);
+}
+
+.dark-mode section.messages-header, .dark-mode section.text {
+    background: var(--shade-main-clr);
+    color: var(--white-clr);
+}
+
+.dark-mode article.text p:not(.time) {
+    background: var(--light-grey-clr);
+}
+
+.dark-mode .time {
+    color: var(--white-clr);
+}
+
+/* SUMMARY */
+
+.dark-mode main.user-summary article {
+    background: var(--light-main-clr);
+}
+
+/* SIGN UP */
+.dark-mode form {
+    color: var(--white-clr);
+}
+
+.dark-mode form input:not([type="checkbox"], [type="submit"]) {
+    border-color: var(--light-main-clr);
+}
+
+.dark-mode form .fa-eye {
+    color: var(--main-clr);
+}
+
+.dark-mode .btn {
+    background: var(--accent-clr);
+}
+
+.dark-mode .forgot-pass, .dark-mode .verification {
+    color: var(--white-clr);
+}
+
+.dark-mode main.verification .verification {
+    border-color: var(--main-clr);
+    color: var(--black-clr);
+}
+
+.dark-mode .resend {
+    border-color: var(--white-clr);
+}
+
+/* ADMIN MOINTORING */
+.dark-mode .admin-monitoring {
+    color: var(--white-clr);
+}
+
+.dark-mode .admin-monitoring .landmark {
+    color: var(--black-clr);
+}
+
+.dark-mode .contact {
+    background: var(--main-clr);
+    border-color: var(--tint-main-clr);
+}
+
+.dark-mode .ad-summary {
+    color: var(--white-clr);
+}
+
+.dark-mode .status.online {
+    color: var(--tint-main-clr);
+}
+
+.dark-mode .status.online::after {
+    background: var(--tint-main-clr);
+}
+
+.dark-mode .status.offline {
+    color: var(--light-warning-clr);
+}
+
+.dark-mode .status.offline::after {
+    background: var(--light-warning-clr);
+}
+
+/* PEDRO MESSAGES */
+.dark-mode .pedro-mess {
+    background: var(--main-clr);
+}

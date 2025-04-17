@@ -1,0 +1,71 @@
+main {
+    background: var(--clr-white);
+    text-align: center;
+    margin-block-start: 1rem;
+}
+
+main .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .1rem solid var(--black-clr);
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+main h4 {
+    margin-block-end: 1rem;
+    font-size: 1.2rem;
+}
+
+main img {
+    width: 3rem;
+}
+
+main p:not(.time) {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 5.5rem;
+}
+
+main h5 {
+    position: absolute;
+    left: 5.5rem;
+    bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+main i {
+    font-size: 1.5rem;
+}
+
+main .status.offline {
+    color: var(--warning-clr);
+}
+
+main .status.online {
+    color: var(--light-main-clr);
+}
+
+main .status::after {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    margin-inline-start: .4rem;
+    border-radius: var(--circle-radius);
+}
+
+main .status.offline::after {
+    background: var(--warning-clr);
+}
+
+main .status.online::after {
+    background: var(--light-main-clr);
+}
+
+section.go-back {
+    text-align: left;
+    margin-inline-start: 1rem;
+}

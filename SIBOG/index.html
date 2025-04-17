@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dark.mode.css">
+    <title>SIBOG</title>
+</head>
+<body>
+    <header class="header">
+        <img src="Images/sibog-logo.png" alt="SIBOG logo" class="logo-img">
+        <a href="index.html" class="logo-name">SIBOG</a>
+        <h4 class="nav-text">HOME</h4>
+        <i class="fa-solid fa-moon dark-mode"></i>
+        <i class="fa-solid fa-bell notifications" id="notifications"><p class="notif-num">1</p></i>
+    </header>
+
+    <!-- Yung links sa footer (lowest section ng web page) -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active">
+                <a href="index.html" class="nav-item"><i class="nav-link-icon fa-solid fa-house"></i></a>
+            </li>
+            <li>
+                <a href="user-monitoring.html" class="nav-item"><i class="nav-link-icon fa-solid fa-eye"></i></a>
+            </li>
+            <li>
+                <a href="messages.html" class="nav-item"><i class="nav-link-icon fa-solid fa-message"></i></a>
+            </li>
+            <li>
+                <a href="user-summary.html" class="nav-item"><i class="nav-link-icon fa-solid fa-clipboard-list"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar if i-cliclick yung profile pic -->
+    <aside class="profile-menu" id="side-bar">
+        <section class="go-back">
+            <i class="fa-solid fa-arrow-left" id="close-btn"></i>
+        </section>
+        <section class="notif">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p class="notif-text">SMC is low</p>
+            <p class="notif-time">2:03 PM</p>
+        </section>
+        <a href="sign-up.html" class="sign-out">
+            <p>Log Out</p>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </a>
+    </aside>
+
+    <!-- Ito lang yung iiba per page -->
+    <main>
+        <h1 class="greetings">Hi <span class="user-name">Pedro</span></h1>
+        <a href="user-monitoring.html" class="nav-section">
+            <i class="fa-solid fa-eye"></i>
+            <h3>Monitoring</h3>
+        </a>
+        <a href="messages.html" class="nav-section">
+            <i class="fa-solid fa-message"></i>
+            <h3>Chat With Us</h3>
+        </a>
+        <a href="user-summary.html" class="nav-section">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h3>Summary</h3>
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
