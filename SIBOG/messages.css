@@ -89,3 +89,19 @@ section.text textarea, section.text textarea:focus {
 section.text i {
     font-size: 2rem;
 }
+
+@media screen and (min-width: 600px) {
+    p.message {
+        font-size: 1.3rem;
+    }
+
+    article.text {
+        margin-block-start: 1rem;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    section.text textarea {
+        width: 30rem;
+    }
+}
