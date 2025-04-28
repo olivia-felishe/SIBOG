@@ -37,3 +37,29 @@ main .nav-section i {
 main .nav-section h3 {
     font-size: 1.5rem;
 }
+
+@media screen and (min-width: 600px) {
+    main .greetings {
+        margin-bottom: 4rem;
+    }
+
+    main .nav-section i {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    main .nav-section {
+        width: 60%;
+    }
+
+    main .greetings .user-name {
+        left: -180%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main .nav-section:last-of-type {
+        margin-bottom: 5rem;
+    }
+}
