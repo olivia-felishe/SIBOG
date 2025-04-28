@@ -25,6 +25,10 @@ main.user-monitoring {
     margin-block-end: 1rem;
 }
 
+a.go-back {
+    margin-bottom: 1rem;
+}
+
 /* SMC SECTION */
 
 main.monitoring {
@@ -139,6 +143,10 @@ main.smc-monitoring #smc-percent.low-percent {
 }
 
 /* WATER LEVEL */
+main.wtl-monitoring {
+    overflow-y: hidden;
+}
+
 .water-tank {
     background: var(--light-grey-clr);
     border-radius: var(--border-radius);
@@ -268,4 +276,44 @@ main.humidity-monitoring section {
 
 .uv-index {
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        height: 12rem;
+    }
+
+    .go-back {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    main.user-monitoring {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    main.smc-monitoring, main.wtl-monitoring {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: .3fr 1fr 1fr;
+        margin-bottom: 5rem;
+        column-gap: 1rem;
+    }
+
+    main.smc-monitoring a.go-back, main.wtl-monitoring a.go-back {
+        grid-column: span 3;
+    }
+
+    main.smc-monitoring .dashboard, main.wtl-monitoring .water-tank {
+        grid-row: span 2;
+    }
+
+    main.wtl-monitoring .water-tank {
+        height: 100%;
+    }
+
+    main.smc-monitoring .toggle-feature, main.wtl-monitoring .toggle-feature {
+        grid-column: span 2;
+    }
 }
