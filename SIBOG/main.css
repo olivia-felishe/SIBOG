@@ -35,6 +35,7 @@ body {
     font-size: 16px;
     font-family: var(--main-font);
     color: var(--black-clr);
+    position: relative;
 }
 
 img {
@@ -108,6 +109,7 @@ header .logo-name {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 999;
 }
 
 .nav .nav-list {
@@ -183,4 +185,70 @@ header .logo-name {
 
 .profile-menu a.sign-out p {
     margin-inline-end: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        width: 70%;
+    }
+
+    header .logo-name {
+        font-size: 2rem;
+    }
+
+    header .dark-mode, header .fa-bell {
+        font-size: 1.7rem;
+    }
+
+    .nav-text {
+        font-size: 1.3rem;
+    }
+
+    .nav .nav-list li {
+        padding: 1rem .2rem;
+    }
+
+    .nav .nav-list .nav-link-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .logo-img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .logo-img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .logo-img {
+        width: 40%;
+        margin-inline-end: -5rem;
+    }
+
+    .logo-name {
+        font-size: 1.5rem;
+        margin-inline-start: -3rem;
+    }
+
+    header .dark-mode, header .fa-bell {
+        font-size: 2rem;
+    }
+
+    header .dark-mode {
+        margin-inline-end: -9rem;
+    }
+
+    .profile-menu {
+        width: 50vw;
+    }
 }
