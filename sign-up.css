@@ -1,0 +1,142 @@
+main.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form, main.verification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form > h4 {
+    margin-block-end: 1rem;
+    font-size: 1.3rem;
+}
+
+form input:not([type="checkbox"], [type="submit"]) {
+    padding: .5rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-bottom: .18rem solid var(--main-clr);
+    border-radius: var(--border-radius);
+    margin-block-end: 1rem;
+    width: 17rem;
+}
+
+form label[for="password"] {
+    position: relative;
+}
+
+form input {
+    color: inherit;
+}
+
+form i {
+    font-size: 1.5rem;
+    margin-inline-end: 1rem;
+}
+
+form i.fa-eye {
+    position: absolute;
+    right: -.3rem;
+    top: 50%;
+    transform: translateY(-90%);
+}
+
+fieldset {
+    border: none;
+    margin-block-start: 1rem;
+}
+
+.btn {
+    background: var(--shade-accent-clr);
+    color: var(--black-clr);
+    border: none;
+    outline: none;
+    padding: .2rem .5rem;
+    border-radius: var(--border-radius);
+}
+
+a.btn {
+    margin-inline-start: 2rem;
+}
+
+input.btn {
+    display: block;
+    margin-block-start: 2.5rem;
+    font-size: 1.2rem;
+    width: 20rem;
+}
+
+/* FORGOT PASSWORD */
+main.forgot-pass > h3 {
+    margin-block: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main.forgot-pass > h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-block-end: 2rem;
+}
+
+main.forgot-pass input {
+    width: 20rem;
+}
+
+main.forgot-pass .btn {
+    margin-block-start: .2rem;
+    padding-block: 1rem;
+}
+
+/* VERIFICATION */
+main.verification {
+    width: 90vw;
+    margin: auto;
+}
+
+main.verification p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-block-end: 2cap;
+}
+
+main.verification h4 {
+    font-size: 1.3rem;
+}
+
+main.verification form {
+    text-align: center;
+}
+
+
+main.verification label[for="verification-code"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-block-start: 1rem;
+}
+
+main.verification .verification {
+    width: 3rem;
+    border: .2rem solid var(--black-clr);
+    text-align: center;
+    color: inherit;
+    font-size: 2rem;
+}
+
+main.verification .btn {
+    margin-block-start: 1rem;
+    padding-block: 1rem;
+}
+
+.resend {
+    margin-block-start: 1rem;
+    font-size: 1.1rem;
+    border-block-end: .15rem solid var(--black-clr);
+}
